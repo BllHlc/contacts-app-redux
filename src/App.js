@@ -1,10 +1,13 @@
 import './App.css';
-
+import Contacts from './components/Contacts';
+import { ChakraProvider, Flex } from '@chakra-ui/react';
 function App() {
   return (
-    <div className="App">
-
-    </div>
+    <ChakraProvider>
+      <Flex justify={"center"} height={"100vh"}>
+        <Contacts />
+      </Flex>
+    </ChakraProvider>
   );
 }
 
