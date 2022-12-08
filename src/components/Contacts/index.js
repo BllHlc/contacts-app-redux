@@ -9,20 +9,7 @@ const Contacts = () => {
   const contacts = useSelector(contactSelectors.selectTotal);
 
   return (
-    <Flex
-      justifyContent={"center"}
-      alignItems={"center"}
-      padding="5"
-      paddingTop="1"
-      boxShadow="lg"
-      p="6"
-      rounded="md"
-      bg="white"
-      mt="16"
-      maxWidth={"600px"}
-      flexDirection="column"
-      height="fit-content"
-    >
+    <>
       <Form />
       <List />
       <Flex
@@ -34,7 +21,8 @@ const Contacts = () => {
         {" "}
         Total Contacts: {contacts}{" "}
       </Flex>
-    </Flex>
+    </>
+
   );
 };
 

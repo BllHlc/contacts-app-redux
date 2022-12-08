@@ -1,11 +1,13 @@
 import { Flex, Text } from "@chakra-ui/react";
-import React, { useState } from "react";
 import { PhoneIcon, ChatIcon, DeleteIcon, EditIcon } from "@chakra-ui/icons";
 import { useDispatch } from 'react-redux';
 import { deleteContact } from '../../redux/contactSlice';
+import { Link } from 'react-router-dom';
 
 const Item = ({ item }) => {
   const dispatch = useDispatch();
+
+
   const handleDelete = () => {
     if (window.confirm("Are you sure?")) {
       dispatch(deleteContact(item.id));
@@ -46,9 +48,10 @@ const Item = ({ item }) => {
           w={"5%"}
           ms={"2"}
           fontSize="1.2rem"
-        // onClick={() => handleEdit()}
         >
-          <EditIcon />
+          <Link to={`/edit/${item.id}`} style={{ display: "flex" }}>
+            <EditIcon />
+          </Link>
         </Flex>
         <Flex color={"red.300"}
           cursor={"pointer"}

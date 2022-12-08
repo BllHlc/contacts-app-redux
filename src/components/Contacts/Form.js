@@ -21,6 +21,8 @@ const Form = () => {
     <Flex
       flexDirection="column"
       alignItems="center"
+      w={"100%"}
+      px="3"
     >
       <Text
         bgGradient="linear(to-l, #7928CA, #FF0080)"
@@ -32,7 +34,7 @@ const Form = () => {
       >
         Contact App
       </Text>
-      <FormControl onSubmit={handleSubmit} as="form" w="100%" px="2">
+      <FormControl onSubmit={handleSubmit} as="form" w="100%">
         <Input
           placeholder="Full Name"
           value={name}
