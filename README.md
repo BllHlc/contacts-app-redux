@@ -1,4 +1,4 @@
-# Contacts App Redux [See it live]() ↗
+# Contacts App Redux [See it live](https://contacts-app-redux-three.vercel.app/) ↗
 
 Created for learning redux toolkit , createEntityAdapter. This is a simple contacts app with redux toolkit. You can add, delete and edit contacts. You can also filter contacts by name. This project is created with create-react-app. I used redux toolkit for state management. I used chakra-ui for styling. I used react router dom for routing.
 
